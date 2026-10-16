@@ -502,4 +502,13 @@ balatrollm_rules_extraction.md   从 BalatroLLM 三份规则书提取的规则�
 
 ---
 
+## 关于权限与回滚
 
+搭建过程中修过一次工作区权限（`D:\code\小丑牌项目` 缺少一项 Windows 文件
+权限，导致沙箱无法读写）。改动前已备份，可完整还原：
+
+```powershell
+pwsh -NoProfile -File 'D:\code\小丑牌项目-acl-recovery\acl-backup-cf548f6393564e26b172a75eab0998b8.json.ps1' -Path 'D:\code\小丑牌项目' -AllowRoot 'D:\code\小丑牌项目' -Restore 'D:\code\小丑牌项目-acl-recovery\acl-backup-cf548f6393564e26b172a75eab0998b8.json'
+```
+
+确认不再需要后，`D:\code\小丑牌项目-acl-recovery` 整个目录可以直接删掉。

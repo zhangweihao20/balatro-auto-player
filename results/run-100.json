@@ -1,0 +1,902 @@
+[
+  {
+    "seed": "NEW000",
+    "won": false,
+    "ante": 5,
+    "round_num": 15,
+    "steps": 130,
+    "money": 21,
+    "error": null
+  },
+  {
+    "seed": "NEW001",
+    "won": false,
+    "ante": 3,
+    "round_num": 9,
+    "steps": 73,
+    "money": 22,
+    "error": null
+  },
+  {
+    "seed": "NEW002",
+    "won": false,
+    "ante": 5,
+    "round_num": 18,
+    "steps": 171,
+    "money": 20,
+    "error": null
+  },
+  {
+    "seed": "NEW003",
+    "won": false,
+    "ante": 3,
+    "round_num": 8,
+    "steps": 65,
+    "money": 5,
+    "error": null
+  },
+  {
+    "seed": "NEW004",
+    "won": false,
+    "ante": 5,
+    "round_num": 17,
+    "steps": 122,
+    "money": 24,
+    "error": null
+  },
+  {
+    "seed": "NEW005",
+    "won": false,
+    "ante": 5,
+    "round_num": 14,
+    "steps": 132,
+    "money": 8,
+    "error": null
+  },
+  {
+    "seed": "NEW006",
+    "won": false,
+    "ante": 4,
+    "round_num": 12,
+    "steps": 99,
+    "money": 10,
+    "error": null
+  },
+  {
+    "seed": "NEW007",
+    "won": false,
+    "ante": 5,
+    "round_num": 15,
+    "steps": 149,
+    "money": 20,
+    "error": null
+  },
+  {
+    "seed": "NEW008",
+    "won": false,
+    "ante": 4,
+    "round_num": 12,
+    "steps": 121,
+    "money": 3,
+    "error": null
+  },
+  {
+    "seed": "NEW009",
+    "won": false,
+    "ante": 2,
+    "round_num": 5,
+    "steps": 51,
+    "money": 6,
+    "error": null
+  },
+  {
+    "seed": "NEW010",
+    "won": false,
+    "ante": 6,
+    "round_num": 17,
+    "steps": 144,
+    "money": 14,
+    "error": null
+  },
+  {
+    "seed": "NEW011",
+    "won": false,
+    "ante": 6,
+    "round_num": 18,
+    "steps": 166,
+    "money": 10,
+    "error": null
+  },
+  {
+    "seed": "NEW012",
+    "won": false,
+    "ante": 3,
+    "round_num": 9,
+    "steps": 91,
+    "money": 8,
+    "error": null
+  },
+  {
+    "seed": "NEW013",
+    "won": false,
+    "ante": 3,
+    "round_num": 9,
+    "steps": 97,
+    "money": 1,
+    "error": null
+  },
+  {
+    "seed": "NEW014",
+    "won": false,
+    "ante": 7,
+    "round_num": 20,
+    "steps": 189,
+    "money": 8,
+    "error": null
+  },
+  {
+    "seed": "NEW015",
+    "won": false,
+    "ante": 4,
+    "round_num": 11,
+    "steps": 91,
+    "money": 6,
+    "error": null
+  },
+  {
+    "seed": "NEW016",
+    "won": false,
+    "ante": 2,
+    "round_num": 6,
+    "steps": 41,
+    "money": 7,
+    "error": null
+  },
+  {
+    "seed": "NEW017",
+    "won": false,
+    "ante": 5,
+    "round_num": 14,
+    "steps": 113,
+    "money": 9,
+    "error": null
+  },
+  {
+    "seed": "NEW018",
+    "won": false,
+    "ante": 7,
+    "round_num": 20,
+    "steps": 170,
+    "money": 5,
+    "error": null
+  },
+  {
+    "seed": "NEW019",
+    "won": false,
+    "ante": 4,
+    "round_num": 11,
+    "steps": 110,
+    "money": 10,
+    "error": null
+  },
+  {
+    "seed": "NEW020",
+    "won": false,
+    "ante": 2,
+    "round_num": 4,
+    "steps": 35,
+    "money": 6,
+    "error": null
+  },
+  {
+    "seed": "NEW021",
+    "won": false,
+    "ante": 4,
+    "round_num": 11,
+    "steps": 98,
+    "money": 12,
+    "error": null
+  },
+  {
+    "seed": "NEW022",
+    "won": false,
+    "ante": 5,
+    "round_num": 17,
+    "steps": 158,
+    "money": 29,
+    "error": null
+  },
+  {
+    "seed": "NEW023",
+    "won": false,
+    "ante": 5,
+    "round_num": 14,
+    "steps": 127,
+    "money": 20,
+    "error": null
+  },
+  {
+    "seed": "NEW024",
+    "won": false,
+    "ante": 6,
+    "round_num": 17,
+    "steps": 143,
+    "money": 3,
+    "error": null
+  },
+  {
+    "seed": "NEW025",
+    "won": false,
+    "ante": 4,
+    "round_num": 12,
+    "steps": 117,
+    "money": 23,
+    "error": null
+  },
+  {
+    "seed": "NEW026",
+    "won": false,
+    "ante": 5,
+    "round_num": 15,
+    "steps": 132,
+    "money": 23,
+    "error": null
+  },
+  {
+    "seed": "NEW027",
+    "won": false,
+    "ante": 3,
+    "round_num": 9,
+    "steps": 61,
+    "money": 13,
+    "error": null
+  },
+  {
+    "seed": "NEW028",
+    "won": false,
+    "ante": 4,
+    "round_num": 12,
+    "steps": 99,
+    "money": 6,
+    "error": null
+  },
+  {
+    "seed": "NEW029",
+    "won": false,
+    "ante": 6,
+    "round_num": 20,
+    "steps": 181,
+    "money": 20,
+    "error": null
+  },
+  {
+    "seed": "NEW030",
+    "won": false,
+    "ante": 5,
+    "round_num": 15,
+    "steps": 120,
+    "money": 24,
+    "error": null
+  },
+  {
+    "seed": "NEW031",
+    "won": false,
+    "ante": 5,
+    "round_num": 15,
+    "steps": 171,
+    "money": 20,
+    "error": null
+  },
+  {
+    "seed": "NEW032",
+    "won": false,
+    "ante": 3,
+    "round_num": 9,
+    "steps": 72,
+    "money": -8,
+    "error": null
+  },
+  {
+    "seed": "NEW033",
+    "won": false,
+    "ante": 5,
+    "round_num": 13,
+    "steps": 131,
+    "money": 9,
+    "error": null
+  },
+  {
+    "seed": "NEW034",
+    "won": false,
+    "ante": 5,
+    "round_num": 15,
+    "steps": 136,
+    "money": 21,
+    "error": null
+  },
+  {
+    "seed": "NEW035",
+    "won": false,
+    "ante": 1,
+    "round_num": 3,
+    "steps": 28,
+    "money": 4,
+    "error": null
+  },
+  {
+    "seed": "NEW036",
+    "won": false,
+    "ante": 1,
+    "round_num": 3,
+    "steps": 27,
+    "money": 6,
+    "error": null
+  },
+  {
+    "seed": "NEW037",
+    "won": false,
+    "ante": 2,
+    "round_num": 6,
+    "steps": 59,
+    "money": 6,
+    "error": null
+  },
+  {
+    "seed": "NEW038",
+    "won": false,
+    "ante": 6,
+    "round_num": 17,
+    "steps": 147,
+    "money": 24,
+    "error": null
+  },
+  {
+    "seed": "NEW039",
+    "won": false,
+    "ante": 7,
+    "round_num": 21,
+    "steps": 187,
+    "money": 7,
+    "error": null
+  },
+  {
+    "seed": "NEW040",
+    "won": false,
+    "ante": 5,
+    "round_num": 17,
+    "steps": 139,
+    "money": 4,
+    "error": null
+  },
+  {
+    "seed": "NEW041",
+    "won": false,
+    "ante": 5,
+    "round_num": 15,
+    "steps": 138,
+    "money": 2,
+    "error": null
+  },
+  {
+    "seed": "NEW042",
+    "won": false,
+    "ante": 5,
+    "round_num": 14,
+    "steps": 138,
+    "money": 24,
+    "error": null
+  },
+  {
+    "seed": "NEW043",
+    "won": false,
+    "ante": 5,
+    "round_num": 15,
+    "steps": 121,
+    "money": 2,
+    "error": null
+  },
+  {
+    "seed": "NEW044",
+    "won": false,
+    "ante": 5,
+    "round_num": 14,
+    "steps": 152,
+    "money": 10,
+    "error": null
+  },
+  {
+    "seed": "NEW045",
+    "won": false,
+    "ante": 6,
+    "round_num": 16,
+    "steps": 143,
+    "money": 17,
+    "error": null
+  },
+  {
+    "seed": "NEW046",
+    "won": false,
+    "ante": 5,
+    "round_num": 15,
+    "steps": 140,
+    "money": 18,
+    "error": null
+  },
+  {
+    "seed": "NEW047",
+    "won": false,
+    "ante": 5,
+    "round_num": 15,
+    "steps": 113,
+    "money": -2,
+    "error": null
+  },
+  {
+    "seed": "NEW048",
+    "won": false,
+    "ante": 4,
+    "round_num": 15,
+    "steps": 133,
+    "money": 5,
+    "error": null
+  },
+  {
+    "seed": "NEW049",
+    "won": false,
+    "ante": 2,
+    "round_num": 6,
+    "steps": 46,
+    "money": 8,
+    "error": null
+  },
+  {
+    "seed": "NEW050",
+    "won": false,
+    "ante": 3,
+    "round_num": 7,
+    "steps": 66,
+    "money": 2,
+    "error": null
+  },
+  {
+    "seed": "NEW051",
+    "won": false,
+    "ante": 1,
+    "round_num": 3,
+    "steps": 24,
+    "money": 5,
+    "error": null
+  },
+  {
+    "seed": "NEW052",
+    "won": false,
+    "ante": 3,
+    "round_num": 8,
+    "steps": 74,
+    "money": 8,
+    "error": null
+  },
+  {
+    "seed": "NEW053",
+    "won": false,
+    "ante": 1,
+    "round_num": 3,
+    "steps": 32,
+    "money": 7,
+    "error": null
+  },
+  {
+    "seed": "NEW054",
+    "won": true,
+    "ante": 9,
+    "round_num": 24,
+    "steps": 206,
+    "money": 25,
+    "error": "pack: 无法连接 http://127.0.0.1:12346（timed out）。游戏是否在运行、mod 是否加载？"
+  },
+  {
+    "seed": "NEW055",
+    "won": false,
+    "ante": 4,
+    "round_num": 12,
+    "steps": 129,
+    "money": 21,
+    "error": null
+  },
+  {
+    "seed": "NEW056",
+    "won": false,
+    "ante": 5,
+    "round_num": 13,
+    "steps": 122,
+    "money": 10,
+    "error": null
+  },
+  {
+    "seed": "NEW057",
+    "won": false,
+    "ante": 4,
+    "round_num": 12,
+    "steps": 112,
+    "money": 12,
+    "error": null
+  },
+  {
+    "seed": "NEW058",
+    "won": false,
+    "ante": 7,
+    "round_num": 21,
+    "steps": 218,
+    "money": 5,
+    "error": null
+  },
+  {
+    "seed": "NEW059",
+    "won": false,
+    "ante": 1,
+    "round_num": 3,
+    "steps": 24,
+    "money": 2,
+    "error": null
+  },
+  {
+    "seed": "NEW060",
+    "won": false,
+    "ante": 4,
+    "round_num": 12,
+    "steps": 97,
+    "money": 24,
+    "error": null
+  },
+  {
+    "seed": "NEW061",
+    "won": false,
+    "ante": 4,
+    "round_num": 11,
+    "steps": 89,
+    "money": 4,
+    "error": null
+  },
+  {
+    "seed": "NEW062",
+    "won": false,
+    "ante": 6,
+    "round_num": 18,
+    "steps": 198,
+    "money": 11,
+    "error": null
+  },
+  {
+    "seed": "NEW063",
+    "won": false,
+    "ante": 2,
+    "round_num": 4,
+    "steps": 42,
+    "money": 3,
+    "error": null
+  },
+  {
+    "seed": "NEW064",
+    "won": false,
+    "ante": 5,
+    "round_num": 14,
+    "steps": 124,
+    "money": 12,
+    "error": null
+  },
+  {
+    "seed": "NEW065",
+    "won": false,
+    "ante": 5,
+    "round_num": 15,
+    "steps": 118,
+    "money": 23,
+    "error": null
+  },
+  {
+    "seed": "NEW066",
+    "won": false,
+    "ante": 1,
+    "round_num": 3,
+    "steps": 25,
+    "money": 7,
+    "error": null
+  },
+  {
+    "seed": "NEW067",
+    "won": false,
+    "ante": 3,
+    "round_num": 8,
+    "steps": 68,
+    "money": 4,
+    "error": null
+  },
+  {
+    "seed": "NEW068",
+    "won": false,
+    "ante": 1,
+    "round_num": 3,
+    "steps": 25,
+    "money": 5,
+    "error": null
+  },
+  {
+    "seed": "NEW069",
+    "won": false,
+    "ante": 2,
+    "round_num": 4,
+    "steps": 33,
+    "money": 9,
+    "error": null
+  },
+  {
+    "seed": "NEW070",
+    "won": false,
+    "ante": 3,
+    "round_num": 8,
+    "steps": 67,
+    "money": 3,
+    "error": null
+  },
+  {
+    "seed": "NEW071",
+    "won": false,
+    "ante": 1,
+    "round_num": 2,
+    "steps": 18,
+    "money": 3,
+    "error": null
+  },
+  {
+    "seed": "NEW072",
+    "won": false,
+    "ante": 5,
+    "round_num": 15,
+    "steps": 140,
+    "money": 7,
+    "error": null
+  },
+  {
+    "seed": "NEW073",
+    "won": false,
+    "ante": 2,
+    "round_num": 6,
+    "steps": 52,
+    "money": 4,
+    "error": null
+  },
+  {
+    "seed": "NEW074",
+    "won": false,
+    "ante": 3,
+    "round_num": 9,
+    "steps": 69,
+    "money": 24,
+    "error": null
+  },
+  {
+    "seed": "NEW075",
+    "won": false,
+    "ante": 3,
+    "round_num": 7,
+    "steps": 65,
+    "money": 8,
+    "error": null
+  },
+  {
+    "seed": "NEW076",
+    "won": false,
+    "ante": 3,
+    "round_num": 9,
+    "steps": 58,
+    "money": 9,
+    "error": null
+  },
+  {
+    "seed": "NEW077",
+    "won": false,
+    "ante": 2,
+    "round_num": 6,
+    "steps": 54,
+    "money": 12,
+    "error": null
+  },
+  {
+    "seed": "NEW078",
+    "won": false,
+    "ante": 5,
+    "round_num": 15,
+    "steps": 112,
+    "money": 24,
+    "error": null
+  },
+  {
+    "seed": "NEW079",
+    "won": false,
+    "ante": 1,
+    "round_num": 3,
+    "steps": 27,
+    "money": 5,
+    "error": null
+  },
+  {
+    "seed": "NEW080",
+    "won": false,
+    "ante": 2,
+    "round_num": 6,
+    "steps": 55,
+    "money": 5,
+    "error": null
+  },
+  {
+    "seed": "NEW081",
+    "won": false,
+    "ante": 2,
+    "round_num": 4,
+    "steps": 33,
+    "money": 0,
+    "error": null
+  },
+  {
+    "seed": "NEW082",
+    "won": false,
+    "ante": 1,
+    "round_num": 2,
+    "steps": 20,
+    "money": 0,
+    "error": null
+  },
+  {
+    "seed": "NEW083",
+    "won": false,
+    "ante": 2,
+    "round_num": 4,
+    "steps": 34,
+    "money": 4,
+    "error": null
+  },
+  {
+    "seed": "NEW084",
+    "won": true,
+    "ante": 8,
+    "round_num": 27,
+    "steps": 250,
+    "money": 17,
+    "error": null
+  },
+  {
+    "seed": "NEW085",
+    "won": false,
+    "ante": 1,
+    "round_num": 3,
+    "steps": 31,
+    "money": 4,
+    "error": null
+  },
+  {
+    "seed": "NEW086",
+    "won": false,
+    "ante": 8,
+    "round_num": 23,
+    "steps": 207,
+    "money": 4,
+    "error": null
+  },
+  {
+    "seed": "NEW087",
+    "won": false,
+    "ante": 3,
+    "round_num": 8,
+    "steps": 67,
+    "money": 6,
+    "error": null
+  },
+  {
+    "seed": "NEW088",
+    "won": false,
+    "ante": 6,
+    "round_num": 17,
+    "steps": 131,
+    "money": 5,
+    "error": null
+  },
+  {
+    "seed": "NEW089",
+    "won": true,
+    "ante": 8,
+    "round_num": 24,
+    "steps": 216,
+    "money": 24,
+    "error": null
+  },
+  {
+    "seed": "NEW090",
+    "won": false,
+    "ante": 2,
+    "round_num": 6,
+    "steps": 59,
+    "money": 6,
+    "error": null
+  },
+  {
+    "seed": "NEW091",
+    "won": false,
+    "ante": 1,
+    "round_num": 3,
+    "steps": 30,
+    "money": 4,
+    "error": null
+  },
+  {
+    "seed": "NEW092",
+    "won": false,
+    "ante": 5,
+    "round_num": 15,
+    "steps": 135,
+    "money": 18,
+    "error": null
+  },
+  {
+    "seed": "NEW093",
+    "won": false,
+    "ante": 7,
+    "round_num": 20,
+    "steps": 199,
+    "money": 5,
+    "error": null
+  },
+  {
+    "seed": "NEW094",
+    "won": true,
+    "ante": 9,
+    "round_num": 24,
+    "steps": 232,
+    "money": 2,
+    "error": "pack: 无法连接 http://127.0.0.1:12346（timed out）。游戏是否在运行、mod 是否加载？"
+  },
+  {
+    "seed": "NEW095",
+    "won": false,
+    "ante": 3,
+    "round_num": 9,
+    "steps": 74,
+    "money": 8,
+    "error": null
+  },
+  {
+    "seed": "NEW096",
+    "won": false,
+    "ante": 5,
+    "round_num": 14,
+    "steps": 173,
+    "money": 1,
+    "error": null
+  },
+  {
+    "seed": "NEW097",
+    "won": false,
+    "ante": 4,
+    "round_num": 12,
+    "steps": 103,
+    "money": 22,
+    "error": null
+  },
+  {
+    "seed": "NEW098",
+    "won": false,
+    "ante": 2,
+    "round_num": 6,
+    "steps": 52,
+    "money": 10,
+    "error": null
+  },
+  {
+    "seed": "NEW099",
+    "won": false,
+    "ante": 5,
+    "round_num": 15,
+    "steps": 153,
+    "money": 43,
+    "error": null
+  }
+]
