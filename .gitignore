@@ -1,0 +1,18 @@
+# 虚拟环境与依赖缓存（均由工具自动生成，不入库）
+.venv/
+.uv-cache/
+.uv-tools/
+.uv-bin/
+logs/
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+*.egg-info/
+
+# 评测输出的对局记录
+runs/
+
+# pytest 的临时缓存目录（沙箱下可能残留、权限异常）
+pytest-cache-files-*/

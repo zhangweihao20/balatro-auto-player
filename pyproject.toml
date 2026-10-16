@@ -1,0 +1,22 @@
+[project]
+name = "balatro-bot"
+version = "0.1.0"
+description = "自动化小丑牌（Balatro）AI：通过 BalatroBot 的 JSON-RPC 接口驱动游戏"
+requires-python = ">=3.11"
+dependencies = []
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0"]
+
+[project.scripts]
+balatro-bot = "balatro_bot.cli:main"
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+include = ["balatro_bot*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
