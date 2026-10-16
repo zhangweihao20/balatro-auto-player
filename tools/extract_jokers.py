@@ -18,6 +18,7 @@ Python 数据模块，既用于生成通用模型，也用于校验手写表里�
 from __future__ import annotations
 
 import json
+import os
 import re
 import sys
 import zipfile
@@ -25,9 +26,25 @@ from pathlib import Path
 from typing import Any
 
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
-BALATRO_EXE = Path(r"D:\Steam\steamapps\common\Balatro\Balatro.exe")
 CACHED_GAME_LUA = PROJECT_ROOT / "runs" / "game-source" / "game.lua"
 OUTPUT = PROJECT_ROOT / "balatro_bot" / "joker_data.py"
+
+# 游戏本体的位置，按优先级：命令行参数 --exe、环境变量 BALATRO_DIR、常见安装位置。
+#     python tools\extract_jokers.py --exe "D:\Games\Balatro\Balatro.exe"
+#     setx BALATRO_DIR "D:\Games\Balatro"
+DEFAULT_GAME_DIR = Path(r"C:\Program Files (x86)\Steam\steamapps\common\Balatro")
+
+
+def _find_exe(argv: list[str]) -> Path | None:
+    for i, arg in enumerate(argv):
+        if arg == "--exe" and i + 1 < len(argv):
+            return Path(argv[i + 1])
+        if arg.startswith("--exe="):
+            return Path(arg.split("=", 1)[1])
+    env = os.environ.get("BALATRO_DIR")
+    if env:
+        return Path(env) / "Balatro.exe"
+    return DEFAULT_GAME_DIR / "Balatro.exe"
 
 # ---------------------------------------------------------------- Lua 解析
 
@@ -213,18 +230,24 @@ class LuaTableParser:
         return int(result) if result.is_integer() else result
 
 
-def read_game_lua() -> str:
-    """优先从游戏 exe 直接读取，读不到就退回之前提取的副本。"""
-    if BALATRO_EXE.exists():
+def read_game_lua(exe: Path | None = None) -> str:
+    """优先从游戏 exe 直接读取，读不到就退回之前提取的副本。
+
+    游戏装在别处时用 `--exe` 或环境变量 `BALATRO_DIR` 指定；
+    两条路都不通时，只要 `runs/game-source/game.lua` 在就仍然能生成。
+    """
+    exe = exe or _find_exe(sys.argv[1:])
+    if exe.exists():
         try:
-            with zipfile.ZipFile(BALATRO_EXE) as archive:
+            with zipfile.ZipFile(exe) as archive:
                 return archive.read("game.lua").decode("utf-8", "replace")
         except (zipfile.BadZipFile, KeyError) as exc:
             print(f"从 exe 读取失败（{exc}），改用缓存副本", file=sys.stderr)
     if CACHED_GAME_LUA.exists():
         return CACHED_GAME_LUA.read_text(encoding="utf-8", errors="replace")
     raise SystemExit(
-        f"找不到游戏源码：{BALATRO_EXE} 打不开，{CACHED_GAME_LUA} 也不存在。"
+        f"找不到游戏源码：{exe} 打不开，{CACHED_GAME_LUA} 也不存在。\n"
+        "请用 --exe 指定 Balatro.exe，或设环境变量 BALATRO_DIR。"
     )
 
 

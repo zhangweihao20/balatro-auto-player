@@ -1,8 +1,9 @@
 # BalatroLLM Rulebook Extraction — for a deterministic (non-LLM) Balatro bot
 
-**Sources read in full** (`D:\balatrollm\src\balatrollm\strategies\`):
-`default\STRATEGY.md.jinja` (730 lines), `conservative\STRATEGY.md.jinja` (720 lines), `aggressive\STRATEGY.md.jinja` (345 lines), `default\GAMESTATE.md.jinja` (335 lines, **byte-identical to aggressive\GAMESTATE.md.jinja**), `conservative\GAMESTATE.md.jinja` (341 lines), `default\MEMORY.md.jinja` (34 lines), `conservative\MEMORY.md.jinja` (46 lines); framing from `D:\balatrollm\docs\strategies.md`.
-Also consulted (to pin down exact action semantics, not rules): `default\TOOLS.json`, the three `manifest.json`, and `src\balatrollm\bot.py` (the "always select, never skip" policy).
+**Sources read in full** (from the [BalatroLLM](https://github.com/coder/balatrollm) repo,
+`src/balatrollm/strategies/`):
+`default/STRATEGY.md.jinja` (730 lines), `conservative/STRATEGY.md.jinja` (720 lines), `aggressive/STRATEGY.md.jinja` (345 lines), `default/GAMESTATE.md.jinja` (335 lines, **byte-identical to aggressive/GAMESTATE.md.jinja**), `conservative/GAMESTATE.md.jinja` (341 lines), `default/MEMORY.md.jinja` (34 lines), `conservative/MEMORY.md.jinja` (46 lines); framing from `docs/strategies.md`.
+Also consulted (to pin down exact action semantics, not rules): `default/TOOLS.json`, the three `manifest.json`, and `src/balatrollm/bot.py` (the "always select, never skip" policy).
 
 **Notation used below:** `<d>` = default guide, `<c>` = conservative guide, `<a>` = aggressive guide. Everything is quoted/derived from those files. Anything I add from outside knowledge is explicitly tagged **[outside knowledge]**.
 

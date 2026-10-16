@@ -19,6 +19,7 @@
 
 param(
     [int]$Port = 12346,
+    [string]$GameDir = '',
     [switch]$Normal,
     [switch]$Headless,
     [switch]$ViaCli,
@@ -29,7 +30,13 @@ param(
 
 $ErrorActionPreference = 'Stop'
 $root = Split-Path -Parent $PSScriptRoot
-$gameDir = 'D:\Steam\steamapps\common\Balatro'
+
+# 游戏目录：优先用 -GameDir 参数，其次环境变量 BALATRO_DIR，最后是这个默认值。
+# 装在别处时改这里，或者设一次环境变量：
+#     setx BALATRO_DIR "D:\Games\Balatro"
+$gameDir = if ($GameDir) { $GameDir }
+           elseif ($env:BALATRO_DIR) { $env:BALATRO_DIR }
+           else { 'C:\Program Files (x86)\Steam\steamapps\common\Balatro' }
 $exe = Join-Path $gameDir 'Balatro.exe'
 $lovely = Join-Path $gameDir 'version.dll'
 

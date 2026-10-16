@@ -9,16 +9,38 @@
 ## 安装
 
 **推荐用 PowerShell 版**——有些机器上安全软件会拦 `python.exe` 写 `%AppData%`
-（本机实测如此：`python` 报 `PermissionError`，而 PowerShell 的 `Copy-Item`
-和 cmd 的 `copy` 都能过），所以职责拆开：
+（表现是 `python` 报 `PermissionError`，而 PowerShell 的 `Copy-Item` 和 cmd 的
+`copy` 都能过），所以职责拆开：
 
 ```powershell
-# 1) python 只写工作区：生成"打好补丁的入口文件"
+# 1) python 只写工作区：生成打好补丁的文件
 .\.venv\Scripts\python.exe mod_additions\install.py --emit-entry
 
-# 2) powershell 只做文件拷贝：把三个文件放进 mod 目录
+# 2) powershell 只做文件拷贝：把 6 个文件放进 mod 目录
 Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass -Force
 .\mod_additions\install.ps1
+```
+
+要装的 6 个文件 = **2 个新增 + 4 个打补丁**（每个补丁都会先备份成 `*.bak-*`）：
+
+| 文件 | 类型 | 做什么 |
+| --- | --- | --- |
+| `src/lua/ui/journal.lua` | 新增 | 游戏内决策日志面板 |
+| `src/lua/endpoints/journal.lua` | 新增 | 面板数据端点 |
+| `balatrobot.lua` | 补丁 | 加载面板 + 注册端点 |
+| `src/lua/utils/gamestate.lua` | 补丁 | 导出 `discard` / `play` 两个牌区 |
+| `src/lua/endpoints/cash_out.lua` | 补丁 | 等结算 UI 建好再调用（**修游戏崩溃**） |
+| `src/lua/endpoints/pack.lua` | 补丁 | 没有目标牌就不等手牌 + 等待事件加超时 |
+
+后两条不是"锦上添花"，是修 mod 自身的缺陷——细节见
+[../docs/strategy-math.md](../docs/strategy-math.md) 第 17 节，这里只说结论：
+
+```
+gamestate：原版只导出 cards/hand，牌库构成会漏掉已经打出/弃掉的牌
+cash_out ：G.STATE 变成 ROUND_EVAL 与 G.round_eval 被创建不是同一时刻，
+           抢跑会让**游戏进程崩溃**（functions_common_events.lua 索引 nil）；
+           实测五轮 30 局评测都恰好崩在第 14 局，把最好的成绩抹掉
+pack     ：等待事件没有超时，条件不成立就永久挂住（客户端 60 秒后超时）
 ```
 
 **完全不用 python 的版本**（连第 1 步的产物都已备好）：
