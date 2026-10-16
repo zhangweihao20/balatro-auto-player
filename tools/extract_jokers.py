@@ -30,8 +30,8 @@ CACHED_GAME_LUA = PROJECT_ROOT / "runs" / "game-source" / "game.lua"
 OUTPUT = PROJECT_ROOT / "balatro_bot" / "joker_data.py"
 
 # 游戏本体的位置，按优先级：命令行参数 --exe、环境变量 BALATRO_DIR、常见安装位置。
-#     python tools\extract_jokers.py --exe "D:\Games\Balatro\Balatro.exe"
-#     setx BALATRO_DIR "D:\Games\Balatro"
+#     python tools\extract_jokers.py --exe "<你的游戏目录>\Balatro.exe"
+#     setx BALATRO_DIR "<你的游戏目录>"
 DEFAULT_GAME_DIR = Path(r"C:\Program Files (x86)\Steam\steamapps\common\Balatro")
 
 

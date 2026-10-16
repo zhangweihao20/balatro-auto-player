@@ -31,9 +31,9 @@ param(
 $ErrorActionPreference = 'Stop'
 $root = Split-Path -Parent $PSScriptRoot
 
-# 游戏目录：优先用 -GameDir 参数，其次环境变量 BALATRO_DIR，最后是这个默认值。
-# 装在别处时改这里，或者设一次环境变量：
-#     setx BALATRO_DIR "D:\Games\Balatro"
+# 游戏目录：优先用 -GameDir 参数，其次环境变量 BALATRO_DIR，最后是这个默认值
+# （Steam 的默认安装位置）。装在别处时改这里，或者设一次环境变量：
+#     setx BALATRO_DIR "<你的游戏目录>"
 $gameDir = if ($GameDir) { $GameDir }
            elseif ($env:BALATRO_DIR) { $env:BALATRO_DIR }
            else { 'C:\Program Files (x86)\Steam\steamapps\common\Balatro' }
